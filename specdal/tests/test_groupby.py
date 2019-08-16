@@ -6,8 +6,8 @@ import pandas.util.testing as pdt
 import unittest
 
 sys.path.insert(0, os.path.abspath("../../"))
-from specdal.spectrum import Spectrum
-from specdal.collection import Collection
+from specdal import Spectrum
+from specdal import Collection
 
 class GroupByTests(unittest.TestCase):
     def setUp(self):

@@ -6,7 +6,7 @@ import pandas.util.testing as pdt
 import unittest
 
 sys.path.insert(0, os.path.abspath("../../"))
-from specdal.operator import resample
+from specdal.operators import resample
 
 class resamplerTests(unittest.TestCase):
     def setUp(self):

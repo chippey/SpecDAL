@@ -7,8 +7,8 @@ import unittest
 from collections import OrderedDict
 sys.path.insert(0, os.path.abspath("../../"))
 # from specdal.operator import proximal_join
-from specdal.spectrum import Spectrum
-from specdal.collection import Collection, proximal_join, df_to_collection
+from specdal import Spectrum
+from specdal import Collection, proximal_join, df_to_collection
 
 class proximalTests(unittest.TestCase):
     def setUp(self):
