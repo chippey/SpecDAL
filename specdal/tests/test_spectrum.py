@@ -6,7 +6,7 @@ import pandas.util.testing as pdt
 import unittest
 
 sys.path.insert(0, os.path.abspath("../../"))
-from specdal.spectrum import Spectrum
+from specdal.containers.spectrum import Spectrum
 
 ASD_FNAME = "/media/mwestphall/2TB/Big_Bio/Big_Bio_2015/LeafLevel/07202015/ASD/_164_4_LESCA_1_T_1_00001.asd"
 SIG_FNAME = "/media/mwestphall/2TB/Big_Bio/Big_Bio_2015/LeafLevel/07192015/SVC/136_1_ANDGE_1_B_1_000.sig"
