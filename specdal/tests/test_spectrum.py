@@ -8,11 +8,11 @@ import unittest
 sys.path.insert(0, os.path.abspath("../../"))
 from specdal.containers.spectrum import Spectrum
 
-ASD_FNAME = "/media/mwestphall/2TB/Big_Bio/Big_Bio_2015/LeafLevel/07202015/ASD/_164_4_LESCA_1_T_1_00001.asd"
-SIG_FNAME = "/media/mwestphall/2TB/Big_Bio/Big_Bio_2015/LeafLevel/07192015/SVC/136_1_ANDGE_1_B_1_000.sig"
-SED_PSRPLS_FNAME = "/media/mwestphall/2TB/Big_Bio/Big_Bio_2015/LeafLevel/07102015/PSR+/149_1_ANDGE_1_M_1__00013.sed"
-SED_PSM_FNAME = "/media/mwestphall/2TB/Big_Bio/Big_Bio_2015/LeafLevel/06302015/PSM/157_1_AGRSM_1_M_1__00205.sed"
-PICO_FNAME = "/media/mwestphall/2TB/pdata/spectra/20170831-121053_untitled_bat0000__0000.pico.light"
+ASD_FNAME = "/media/mgriffith/2TB/Big_Bio/Big_Bio_2015/LeafLevel/07202015/ASD/_164_4_LESCA_1_T_1_00001.asd"
+SIG_FNAME = "/media/mgriffith/2TB/Big_Bio/Big_Bio_2015/LeafLevel/07192015/SVC/136_1_ANDGE_1_B_1_000.sig"
+SED_PSRPLS_FNAME = "/media/mgriffith/2TB/Big_Bio/Big_Bio_2015/LeafLevel/07102015/PSR+/149_1_ANDGE_1_M_1__00013.sed"
+SED_PSM_FNAME = "/media/mgriffith/2TB/Big_Bio/Big_Bio_2015/LeafLevel/06302015/PSM/157_1_AGRSM_1_M_1__00205.sed"
+PICO_FNAME = "/media/mgriffith/2TB/pdata/spectra/20170831-121053_untitled_bat0000__0000.pico.light"
 
 class spectrumTests(unittest.TestCase):
     def setUp(self):
