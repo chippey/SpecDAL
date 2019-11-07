@@ -6,14 +6,14 @@ import pandas.util.testing as pdt
 import unittest
 
 sys.path.insert(0, os.path.abspath("../../"))
-from specdal.spectrum import Spectrum
-from specdal.operator import stitch
+from specdal.containers.spectrum import Spectrum
+from specdal.operators import stitch
 
 class stitcherTests(unittest.TestCase):
     def setUp(self):
         pass
     def test_operator_stitcher_mean(self):
-        measurement= pd.Series([100, 200, 300, 400, 500],
+        measurement = pd.Series([100, 200, 300, 400, 500],
                                index=pd.Index([1, 2, 3, 3, 4],
                                               name='wavelength'),
                                name='pct_reflect')
