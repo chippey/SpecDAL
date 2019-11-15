@@ -1,6 +1,7 @@
 import os
 import sys
-import tkinter as tk
+import tkinter as tk    # either in python 2 or in python 3
+from PIL import Image, ImageTk
 from tkinter import ttk
 from tkinter import filedialog
 from tkinter import messagebox
@@ -251,10 +252,12 @@ class Viewer(tk.Frame):
 
     def setupNavBarExtras(self,navbar):
         working_dir = os.path.dirname(os.path.abspath(__file__))
-        self.select_icon = tk.PhotoImage(file=os.path.join(working_dir,"select.png"))
+        img = Image.open(os.path.join(working_dir,"select.png"))
+        #self.select_icon = tk.PhotoImage(file=os.path.join(working_dir,"select.png"))
+        self.select_icon = tk.PhotoImage(img)
 
         self.select_button = tk.Button(navbar,width="24",height="24",
-                image=self.select_icon, command = self.returnToSelectMode).pack(side=tk.LEFT,anchor=tk.W)
+                image=img, command = self.returnToSelectMode).pack(side=tk.LEFT,anchor=tk.W)
 
         self.dirLbl = tk.Label(navbar,text="Viewing: None")
         self.dirLbl.pack(side=tk.LEFT,anchor=tk.W)
